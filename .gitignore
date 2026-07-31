@@ -3,6 +3,11 @@ auth.json
 config.toml
 secrets/
 .sandbox-secrets/
+age-identity.txt
+private-sync/*.tar
+private-sync/*.tar.gz
+private-sync/*.zip
+private-sync/*.plaintext
 .env
 .env.*
 .npmrc
