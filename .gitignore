@@ -1,0 +1,93 @@
+# Credentials and secret-bearing configuration
+auth.json
+config.toml
+secrets/
+.sandbox-secrets/
+.env
+.env.*
+.npmrc
+.pypirc
+.netrc
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*[Tt][Oo][Kk][Ee][Nn]*
+*[Cc][Rr][Ee][Dd][Ee][Nn][Tt][Ii][Aa][Ll]*
+*[Ss][Ee][Cc][Rr][Ee][Tt]*
+*[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]*
+*[Kk][Ee][Yy]*
+
+# Known safe filename that contains "key"
+!skills/.system/imagegen/scripts/remove_chroma_key.py
+
+# Session, runtime, UI, and machine-local state
+sessions/
+archived_sessions/
+session_index.jsonl
+.sandbox/
+.sandbox-bin/
+process_manager/
+mcp-oauth-locks/
+computer-use/
+browser/
+node_repl/
+ambient-suggestions/
+attachments/
+pets/
+visualizations/
+vendor_imports/
+.claude-code-router/
+chrome-native-hosts-v2.json
+
+# Caches, temporary files, generated databases, and managed plugin installs
+cache/
+.tmp/
+tmp/
+*.tmp
+*.temp
+*.bak
+sqlite/
+plugins/.plugin-appserver/
+plugins/.remote-plugin-install-staging/
+plugins/cache/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+models_cache.json
+*_catalog.json
+*-catalog.json
+*.marker
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+
+# Installation and migration identifiers
+installation_id
+cap_sid
+.codex-global-state.json*
+..codex-global-state.json*
+.personality_migration
+.sandbox_migration
+external_agent_session_imports.json
+
+# Tool backups and originals
+*.ccr-backup-*
+*.ccr-original
+*.ccr-original-*
+*.ccr-original-missing
+
+# Logs and histories
+*.log
+*.jsonl
+transcription-history.jsonl
+
+# OS/editor junk
+Thumbs.db
+.DS_Store
+Desktop.ini
+*.swp
+*~
