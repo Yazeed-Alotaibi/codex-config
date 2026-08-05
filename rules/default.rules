@@ -1,0 +1,4 @@
+prefix_rule(pattern=["git", "ls-remote"], decision="allow")
+prefix_rule(pattern=["git", "clone"], decision="allow")
+prefix_rule(pattern=["C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "-Command", "$repo='C:\\Users\\PC\\codex-config-sync'; $live='C:\\Users\\PC\\.Codex'; git -C $repo ls-files | ForEach-Object { $source=Join-Path $repo $_; $target=Join-Path $live $_; if (-not (Test-Path -LiteralPath $target)) { [PSCustomObject]@{State='MISSING';Path=$_} } elseif ((Get-FileHash -Algorithm SHA256 -LiteralPath $source).Hash -ne (Get-FileHash -Algorithm SHA256 -LiteralPath $target).Hash) { [PSCustomObject]@{State='DIFFERENT';Path=$_} } } | Format-Table -AutoSize"], decision="allow")
+prefix_rule(pattern=["git", "pull"], decision="allow")

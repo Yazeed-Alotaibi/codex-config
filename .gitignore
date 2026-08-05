@@ -70,6 +70,10 @@ __pycache__/
 node_modules/
 .venv/
 
+# Managed runtime packages and transient coordination state
+/packages/
+/thread-writer-locks/
+
 # Installation and migration identifiers
 installation_id
 cap_sid
