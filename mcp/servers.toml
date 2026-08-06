@@ -1,0 +1,15 @@
+# Shareable MCP server definitions for Codex.
+#
+# `~/.codex/config.toml` is gitignored in this repo because it carries
+# credentials, so secret-free MCP server entries live here and are merged into
+# each machine's config.toml (see README.md in this directory).
+#
+# Only add servers whose config needs no inline secret. Anything that needs an
+# API key belongs in config.toml via `bearer_token_env_var`, never inline here.
+
+# ROIC.ai — financial data for 60k+ public companies: tickers, company
+# profiles, financial statements, ratios, valuation multiples, stock prices,
+# forex, and earnings-call transcripts (36 read-only tools).
+# Streamable HTTP transport; authenticate once with `codex mcp login roicai`.
+[mcp_servers.roicai]
+url = "https://mcp.roic.ai/mcp"

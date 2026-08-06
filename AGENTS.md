@@ -251,3 +251,10 @@ git push
 If there's nothing to commit, just say so — don't push an empty commit.
 
 Never run these two commands for any other repo unless the user is explicitly working inside `~/.Codex`.
+
+## MCP servers
+
+`config.toml` stays gitignored because it carries credentials. Secret-free MCP
+server entries are tracked in `mcp/servers.toml`; `mcp/README.md` covers how to
+apply them on a machine. Add new shareable servers there, and keep API keys in
+`config.toml` via `bearer_token_env_var` only.
