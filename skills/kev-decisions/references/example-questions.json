@@ -1,0 +1,11 @@
+{
+  "issue": {
+    "type": "choice",
+    "instructions": "Which issue is explicitly supported by this document?",
+    "criteria": {
+      "delivery_delay": "Delivery is late",
+      "quality_defect": "An item failed quality inspection",
+      "insufficient_evidence": "Neither issue is explicitly supported"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kev Decisions"
+  short_description: "Score document-based choices with local or hosted Kev"
+  default_prompt: "Use $kev-decisions to answer structured questions about this document."
