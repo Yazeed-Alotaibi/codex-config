@@ -100,3 +100,6 @@ Thumbs.db
 Desktop.ini
 *.swp
 *~
+
+# Safe Jev configuration template (contains no credentials)
+!tools/jev-ultrafast/.env.example
